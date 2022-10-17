@@ -5,7 +5,7 @@ pr:
   - none
 
 variables:
-  - group: AzMinLab-CanadaPubSecALZ-AADJ
+  - group: AzMinLab-CanadaPubSecALZ - AADJ
   - name: deploymentRegion
     value: canadacentral
   - name: serviceConnection
@@ -59,3 +59,4 @@ stages:
             - vNetworkGatewayOnHub $(vNetworkGatewayOnHub)
             - createOuForStorage $(createOuForStorage)
             - storageOuPath $(storageOuPath)
+            - avdIdentityServiceProvider $(avdIdentityServiceProvider)
